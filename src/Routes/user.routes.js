@@ -4,6 +4,7 @@ const { checkPassword } = require("../Validators/passwordChecker");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");
 const { BlackListModel } = require("../Models/blacklisting.model");
+require('dotenv').config();
 const SpecialKey = process.env.tokenkey;
 
 const userRouter = express.Router();

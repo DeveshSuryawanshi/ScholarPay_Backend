@@ -1,5 +1,6 @@
 const jwt = require("jsonwebtoken");
 const { BlackListModel } = require("../Models/blacklisting.model");
+require("dotenv").config();
 const SpecialKey = process.env.tokenkey;
 
 const auth = async(req, res, next) =>{
