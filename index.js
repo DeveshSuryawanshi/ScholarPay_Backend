@@ -19,7 +19,7 @@ app.get("/", async(req, res) =>{
     }
 })
 
-app.listen(PORT, async() =>{{
+app.listen(PORT, async() =>{
     try {
         await connection;
         console.log("Conneted to the DataBase");
@@ -27,4 +27,4 @@ app.listen(PORT, async() =>{{
     } catch (error) {
         console.log(error);
     }
-}})
+})
